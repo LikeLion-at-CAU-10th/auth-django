@@ -5,8 +5,9 @@
 {% block content %}
 {% if user.is_authenticated %}
     {{ user.username }} 님 환영합니다!🦁
+    <p><a href="{% url 'logout' %}">로그아웃</a></p>
 {% else %}
     <p>로그인이 필요합니다.</p>
-    <a href="{% url '로그인' %}">Log In</a>
+    <a href="{% url 'login' %}">로그인</a>
 {% endif %}
 {% endblock %}
