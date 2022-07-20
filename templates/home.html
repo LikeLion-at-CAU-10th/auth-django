@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    {{ user.username }} 님 환영합니다!🦁
+{% else %}
+    <p>로그인이 필요합니다.</p>
+    <a href="{% url '로그인' %}">Log In</a>
+{% endif %}
+{% endblock %}
