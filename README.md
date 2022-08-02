@@ -8,9 +8,6 @@
 `python manage.py createsuperuser`
 유저를 생성합니다.
 
-`pip install django-cors-headers`
-cors 처리를 해줍니다.
-
 # API
 base url: http://localhost:8000
 ## 로그인 `POST auth/login`
