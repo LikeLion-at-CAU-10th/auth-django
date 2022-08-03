@@ -14,6 +14,7 @@ def login_view(request):
         user_data = {
             "id": user.pk,
             "email": user.email,
+            "user_name": user.username,
             "first_name": user.first_name,
             "last_name": user.last_name,
             "is_active": user.is_active,
