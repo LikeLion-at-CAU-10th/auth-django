@@ -28,7 +28,17 @@ base url: http://localhost:8000
 ```
 {
     "success": true,
-    "message": "로그인 성공"
+    "message": "로그인 성공",
+    "data": {
+        "id": 1,
+        "email": "puang@likelion.org",
+        "user_name": "test",
+        "first_name": "김",
+        "last_name": "멋사",
+        "is_active": true,
+        "date_joined": "2022-07-20T05:07:11Z",
+        "last_login": "2022-08-03T04:37:42.073Z"
+    }
 }
 ```
 **실패**  
